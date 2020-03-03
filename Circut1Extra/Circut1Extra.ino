@@ -1,7 +1,10 @@
 // Output pins.
 static int output[] = {0, 1, 2, 3};
+static int output2[] = {4, 5, 6, 7};
+
 // 8421 code lookup table.
-static int segs_encoding[][4] = {
+static int segs_encoding[][4] =
+{ 
   {0, 0, 0, 0},
   {0, 0, 0, 1},
   {0, 0, 1, 0},
@@ -26,13 +29,17 @@ void show(int base, int num) {
 }
 // Output a decimal value.
 void show_decimal(int num) {
-  show(0, num);
+  show(0, num / 10);
+  show(4, num % 10);
 }
 // the setup routine runs once when you press reset:
 void setup() {
+  for (int j = 4; j < 8; ++j)
+    pinMode(j, OUTPUT);
   for (int i = 0; i < 4; ++i)
     pinMode(i, OUTPUT);
 }
+
 // the loop routine runs over and over again forever:
 void loop() {
   static int i = 0;
@@ -40,6 +47,6 @@ void loop() {
   delay(1000);
   // Increases the counter.
   ++i;
-  if (i == 10)
+  if (i == 60)
     i = 0;
 }
