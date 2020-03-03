@@ -1,6 +1,6 @@
 // Output pins.
-static int output[] = {0, 1, 2, 3};
-static int output2[] = {4, 5, 6, 7};
+static int output5[] = {0, 1, 2, 3};
+static int output10[] = {4, 5, 6, 7};
 
 // 8421 code lookup table.
 static int segs_encoding[][4] =
