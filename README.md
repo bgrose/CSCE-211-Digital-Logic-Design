@@ -1,8 +1,16 @@
-# CSCE 211: Digital Logic Design
-Code Written for Dr. Jeremy Lewis CSCE211 Class for Spring of 2020
+## CSCE 146: Algorithmic Design II
+Code Written for Dr. JJ Shepherd CSCE 212 Class for Spring of 2020.
 
-Code for Archival Purposes Only
+**Code for Archival Purposes Only**
 
-Grade: N/A
+**Grade: A**
 
-Topics Covered: Number systems, Boolean algebra, logic design, sequential machines.
+Topics Covered: 
+* Number Systems.
+* Boolean Algebra.
+* Logic Design.
+* Sequential Machines.
+
+
+
+*Developed in Arduino IDE*
